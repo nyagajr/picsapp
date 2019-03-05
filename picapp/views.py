@@ -43,3 +43,16 @@ def pics_today(request):
         </html>
             '''
     return HttpResponse(html)
+
+def search_results(request):
+
+    if 'Image' in request.GET and request.GET["Image"]:
+        search_term = request.GET.get("Image")
+        searched_images = Image.search_by_title(search_term)
+        message = f"{search_term}"
+
+        return render(request, 'gallery/search.html',{"message":message,"Image": searched_images})
+
+    else:
+        message = "You haven't searched for any term"
+        return render(request, 'gallery/search.html',{"message":message})

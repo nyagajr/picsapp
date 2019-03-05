@@ -5,6 +5,7 @@ from django.http  import HttpResponse
 
 # Create your views here.
 def welcome(request):
+    date = dt.date.today()
 
 def pics_today(request):
     date = dt.date.today()

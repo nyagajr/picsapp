@@ -8,3 +8,9 @@ class Category(models.Model):
         return self.category_name
 
 
+class Location(models.Model):
+    loc_name = models.CharField(max_length =30)
+
+    def __str__(self):
+        return self.loc_name
+

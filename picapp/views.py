@@ -6,6 +6,7 @@ from django.http  import HttpResponse
 # Create your views here.
 def welcome(request):
     date = dt.date.today()
+    return render(request, 'gallery/pics.html', {"date":date,})
 
 def pics_today(request):
     date = dt.date.today()

@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'picapp.app.PicappConfig',
+    'bootstrap3',
     'picapp.apps.PicappConfig',
     'django.contrib.admin',
     'django.contrib.auth',

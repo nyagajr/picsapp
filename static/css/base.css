@@ -1,4 +1,19 @@
 h1
 {
-  color: green;
+  color: blue;
+}
+img{
+  display:inline-block;
+  height: 350;
+  width: 350;
+}
+body{
+  background: black;
+}
+#search{
+  outline: blue;
+  background: black;
+}
+#bt{
+  background: black;
 }

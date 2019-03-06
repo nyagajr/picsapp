@@ -1,5 +1,15 @@
+
 {%extends 'gallery/base.html'%}
 
 {% block content %}
 {{block.super}}
+{% for images in display %}
+
+
+     <a data-fancybox href="{{images.image.url}}" data-caption="<p>{{images.image_name}}</p>">
+       <img src=" {{images.image.url}}" alt=" img" />
+     </a>
+
+
+{%endfor%}
 {% endblock %}

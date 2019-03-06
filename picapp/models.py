@@ -25,9 +25,6 @@ class Image(models.Model):
         return self.image_name
 
     @classmethod
-    def search_by_title(cls,search_term):
-        news = cls.objects.filter(title__icontains=search_term)
-        return news
     def search_by_image(cls,search_term):
         pic = cls.objects.filter(image__icontains=search_term)
         return pic
